@@ -6,6 +6,10 @@ class MissileCollection
     @missiles = []
   end
 
+  def launch_for(ship)
+    add(Missile.new(ship.mizzle_location, ship.ordinance_velocity))
+  end
+
   def add(missile)
     missiles << missile
   end
@@ -17,5 +21,6 @@ class MissileCollection
   def draw
     missiles.each(&:draw)
   end
-
 end
+
+

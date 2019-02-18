@@ -14,9 +14,13 @@ class Ship
   end
 
   def fire(missiles)
-    missile = Missile.new(x, top_edge)
+    missile = new_missile
     missile.launch(-10)
     missiles.add(missile)
+  end
+
+  def new_missile
+    Missile.new(x: x, y: top_edge)
   end
 
   def move_left
