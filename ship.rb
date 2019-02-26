@@ -6,6 +6,7 @@ class Ship
   WIDTH = 100
   HEIGHT = 100
   DEFAULT_VELOCITY = 5
+  ORIENTATION_UP = -1
 
   attr_accessor :location
 
@@ -45,6 +46,10 @@ class Ship
 
   def half_height
     HEIGHT / 2
+  end
+
+  def orientation
+    ORIENTATION_UP
   end
 
 end

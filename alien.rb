@@ -4,6 +4,7 @@ class Alien
 
   WIDTH = 50
   HEIGHT = 50
+  ORIENTATION_DOWN = 1
 
   attr_accessor :location
 
@@ -30,6 +31,10 @@ class Alien
 
   def half_height
     HEIGHT / 2
+  end
+
+  def orientation
+    ORIENTATION_DOWN
   end
 
 end
